@@ -1,8 +1,14 @@
 /**
     outline: 2px solid #000000*/
 
+nav {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
 .title {
   justify-content: center;
+  margin: 1rem;
 }
 
 .about-row {
@@ -13,7 +19,7 @@
 
 .flexor {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .side {
@@ -23,6 +29,13 @@
 
 .port-item {
   margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.port-items {
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .container-fluid{
@@ -31,19 +44,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  margin: 0 0px !important;
 }
 
-.portrait{
-  background-image: url('https://lh3.google.com/u/0/d/1UgKEq6kTCEHtpkKJCA6zKUVKxU1HNHQ8=w1920-h1098-iv2');
-  background-position: center;
-  background-size: cover;
+.about-ipsum-txt {
+  line-height: 3rem;
+  text-align: center;
 }
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color: #000000;
-  margin: 50px;
+.about-v-align {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portrait-row{
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
