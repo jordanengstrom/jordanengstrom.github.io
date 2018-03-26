@@ -51,6 +51,11 @@ nav {
 .about-ipsum-txt {
   line-height: 3rem;
   text-align: center;
+  padding: 2rem;
+}
+
+.about-txt {
+  background-color: rgba(255,255,255,0.3);
 }
 
 .about-v-align {
@@ -62,6 +67,10 @@ nav {
 .portrait-row{
   justify-content: center;
   align-items: center;
+}
+
+.portrait {
+  border-radius: 50%;
 }
 
 h2 {
