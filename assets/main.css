@@ -39,7 +39,7 @@ nav {
 }
 
 .container-fluid{
-  background-image: url('/assets/land-page-bg.jpg');
+  background-image: url('./land-page-bg.jpg');
   /* height: 100vh; */
   background-position: center;
   background-repeat: no-repeat;
