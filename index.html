@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Engstrom Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/main.css">
@@ -13,9 +16,9 @@
 
 <body>
     <div class="container-fluid">
-        <nav class="flexor navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <nav class="flexor navbar navbar-expand-lg" id="nav">
             <div class="side">
-                <h3 class="navbar-brand" href="#">JE</h3>
+                <img src="./assets/logo-transparent-bg.png" alt="jae" style="height: 4rem;">
             </div>
             <div>
                 <div class="side">
@@ -36,88 +39,185 @@
             </div>
 
         </nav>
-
-        <div class="row about-row">
-            <div class="col-sm-12">
-                <div class="row title" id="about">
-                    <h3>About</h3>
-                </div>
-                <div class="row about-v-align">
-                    <div class="col-sm-5 about-txt">
-                        <p class="row about-ipsum-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quis, maiores laudantium nobis porro
-                            blanditiis officiis. Vero, magnam optio doloribus ex soluta totam assumenda expedita labore provident
-                            quis reprehenderit accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                            quidem fuga explicabo alias ullam sint rerum nam sapiente dolores consequatur nisi quasi iste
-                            assumenda, odio recusandae laborum totam nesciunt reprehenderit.
-                        </p>
+        <div class="parent-align">
+            <div class="col-sm-9 center-bg">
+                <div class="row about-row">
+                    <div class="col-sm-12">
+                        <div class="row title" id="about">
+                            <h3>About</h3>
+                        </div>
+                        <div class="row about-v-align">
+                            <div class="col-sm-5 about-txt">
+                                <p class="row about-ipsum-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quis, maiores laudantium nobis
+                                    porro blanditiis officiis. Vero, magnam optio doloribus ex soluta totam assumenda expedita
+                                    labore provident quis reprehenderit accusamus. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Dicta quidem fuga explicabo alias ullam sint rerum nam sapiente dolores
+                                    consequatur nisi quasi iste assumenda, odio recusandae laborum totam nesciunt reprehenderit.
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row portrait-row">
+                                    <img class="portrait" src="./assets/me.jpg" height="350px">
+                                </div>
+                                <div class="buttons flexor">
+                                    <a href="https://www.linkedin.com/in/jordan-engstrom-265291160" title="linked in">
+                                        <i class="fab fa-linkedin fa-2x pointer"></i>
+                                    </a>
+                                    <a href="https://github.com/jordanengstrom?tab=repositories"  title="github">
+                                        <i class="fab fa-github fa-2x pointer"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/jordan.smithjackson" title="facebook">
+                                        <i class="fab fa-facebook-square fa-2x pointer"></i>
+                                    </a>
+                                    <a href="https://twitter.com/StellarGeode"  title="twitter">
+                                        <i class="fab fa-twitter-square fa-2x pointer"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="row portrait-row">
-                            <img class="portrait" src="./assets/me.jpg" height="425px">
+                </div>
+                <div class="row portfolio about-row">
+                    <div class="col-sm-12">
+                        <div class="row title" id="portfolio">
+                            <h3>Portfolio</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 v-align">
+                        <div class="row port-items">
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="..." alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <button href="#" class="btn btn-primary">Go somewhere</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="..." alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <button href="#" class="btn btn-primary">Go somewhere</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="..." alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title roboto-txt">Card title</h5>
+                                        <p class="card-text roboto-txt">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <button href="#" class="btn btn-primary roboto-txt">Go somewhere</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 v-align">
+                        <div class="row port-items">
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title roboto-txt">Card title</h5>
+                                        <p class="card-text roboto-txt">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary roboto-txt">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 v-align">
+                        <div class="row port-items">
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title roboto-txt">Card title</h5>
+                                        <p class="card-text roboto-txt">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary roboto-txt">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-row">
+                    <div class="col-sm-9">
+                        <div class="row title" id="resume">
+                            <h3>Resume</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row">
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row portfolio">
-            <div class="col-sm-12">
-                <div class="row title" id="portfolio">
-                    <h3>Portfolio</h3>
-                </div>
-            </div>
-            <div class="col-sm-12 v-align">
-                <div class="row port-items">
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="row port-items">
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="row port-items">
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                    <div>
-                        <img class="port-item" src="http://placehold.it/200x200" alt="asdf">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="row title" id="resume">
-                    <h4>Resume</h4>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="row">
-
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

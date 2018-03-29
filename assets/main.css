@@ -4,12 +4,33 @@
 nav {
   margin-left: -15px !important;
   margin-right: -15px !important;
+  background-color: #daecf0;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 .title {
   justify-content: center;
   margin: 1rem;
+  font-family: 'Monoton', cursive;
+  /* background-color: rgba(255,255,255,0.3); */
+  /* margin: 7rem; */
 }
+
+a {
+  color: inherit;
+
+}
+
+a:hover {
+  color: #cdcec4;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
 
 .about-row {
   margin-top: 2rem;
@@ -27,6 +48,13 @@ nav {
   margin-right: 1rem;
 }
 
+.pointer:hover{
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
 .port-item {
   margin-bottom: 2rem;
   padding-top: 2rem;
@@ -35,12 +63,13 @@ nav {
 .port-items {
   display: flex;
   justify-content: space-around;
+  margin-top: 1.5rem;
 
 }
 
 .container-fluid{
   background-image: url('./land-page-bg-min.jpg');
-  /* height: 100vh; */
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,11 +81,25 @@ nav {
   line-height: 3rem;
   text-align: center;
   padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
-.about-txt {
-  background-color: rgba(255,255,255,0.3);
+p
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
+
+.card-body
+{
+  justify-content: center;
+}
+
+/* .about-txt {
+  background-color: rgba(255,255,255,0.3);
+} */
 
 .about-v-align {
   flex-direction: row;
@@ -64,6 +107,15 @@ nav {
   justify-content: space-around;
 }
 
+.parent-align{
+  display: flex;
+  padding-left: 15rem;
+}
+
+.center-bg {
+  margin-top: 5rem;
+  background-color: rgba(255,255,255,0.3);
+}
 .portrait-row{
   justify-content: center;
   align-items: center;
