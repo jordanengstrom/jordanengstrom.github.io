@@ -15,7 +15,14 @@ h3 {
   justify-content: center;
   margin: 1rem;
   font-family: 'Monoton', cursive;
-  /* background-color: rgba(255,255,255,0.3); */
+  background-color: rgba(255,255,255,0.6);
+  /* background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 81%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0) 100%); */
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  margin-left: -3.80rem;
+  margin-right: -.9rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   /* margin: 7rem; */
 }
 
@@ -69,8 +76,9 @@ a:hover {
 
 .container-fluid{
   background-image: url('./land-page-bg-min.jpg');
-  height: 100vh;
+  /* height: 100vh; */
   background-position: center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -85,6 +93,14 @@ a:hover {
   font-size: 1rem;
 }
 
+#about{
+  padding-left: 3rem;
+}
+
+hr{
+  margin-right: 3rem; 
+}
+
 p
 {
   font-family: 'Roboto', sans-serif;
@@ -92,19 +108,21 @@ p
   text-align: center;
 }
 
-.card-body
-{
-  justify-content: center;
+.card-body{
+  text-align: center;
 }
 
-/* .about-txt {
-  background-color: rgba(255,255,255,0.3);
-} */
+.name{
+  text-align: center;
+  font-family: serif;
+  margin-top: 2rem;
+}
 
 .about-v-align {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 1.5rem;
 }
 
 .parent-align{
@@ -121,8 +139,14 @@ p
   align-items: center;
 }
 
+.portrait-block {
+  margin-right: 3.5rem;
+}
+
 .portrait {
   border-radius: 50%;
+  width: 100%;
+  height: auto;
 }
 
 h2 {
