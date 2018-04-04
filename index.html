@@ -6,205 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Engstrom Landing Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/main.css">
+        <link rel="stylesheet" href="assets/main.css">
+        <script type="text/javascript" src="./scrollController.js">
+        </script>
+        
 </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="flexor navbar navbar-expand-lg" id="nav">
+        <nav class="flexor fixed-top navbar navbar-expand-lg" id="nav">
             <div class="side">
                 <img src="./assets/logo-transparent-bg.png" alt="jae" style="height: 4rem;">
             </div>
             <div>
                 <div class="side">
-                    <h4>
-                        <a href="#about">About</a>
-                    </h4>
+                    <h6>
+                        <a onclick="initScroll('about'); return false; " href="#about">About</a>
+                    </h6>
                 </div>
                 <div class="side">
-                    <h4>
-                        <a href="#portfolio">Portfolio</a>
-                    </h4>
+                    <h6>
+                        <a onclick="initScroll('portfolio'); return false; " href="#portfolio">Portfolio</a>
+                    </h6>
                 </div>
                 <div class="side">
-                    <h4>
-                        <a href="#resume">Resume</a>
-                    </h4>
+                    <h6>
+                        <a onclick="initScroll('resume'); return false; " href="#resume">Resume</a>
+                    </h6>
                 </div>
             </div>
-    
+
         </nav>
         <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 center-bg">
-                    <div class="row about-row">
-                        <div class="col-sm-12">
-                            <div class="row title" id="about">
-                                    <h3>About</h3>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 center-bg">
+                <div class="row about-row">
+                    <div class="col-sm-12">
+                        <div class="row title" id="about">
+                            <h3>About</h3>
+                        </div>
+                        <div class="row about-v-align">
+                            <div class="col-sm-12 name">
+                                <h4>Jordan Engstrom</h4>
+                                <hr>
+                                <h4>Full stack developer</h4>
                             </div>
-                            <div class="row about-v-align">
-                                <div class="col-sm-12 name">
-                                    <h4>Jordan Engstrom</h4>
-                                    <hr>
-                                    <h4>Full stack developer</h4>
+                            <div class="col-sm-5 about-txt">
+                                <p class="row about-ipsum-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quis, maiores laudantium nobis
+                                    porro blanditiis officiis. Vero, magnam optio doloribus ex soluta totam assumenda expedita
+                                    labore provident quis reprehenderit accusamus. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Dicta quidem fuga explicabo alias ullam sint rerum nam sapiente dolores
+                                    consequatur nisi quasi iste assumenda, odio recusandae laborum totam nesciunt reprehenderit.
+                                </p>
+                            </div>
+                            <div class="col-sm-4 portrait-block">
+                                <div class="row portrait-row">
+                                    <img class="portrait" src="./assets/me.jpg">
                                 </div>
-                                <div class="col-sm-5 about-txt">
-                                    <p class="row about-ipsum-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quis, maiores laudantium
-                                        nobis porro blanditiis officiis. Vero, magnam optio doloribus ex soluta totam assumenda
-                                        expedita labore provident quis reprehenderit accusamus. Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Dicta quidem fuga explicabo alias ullam sint rerum
-                                        nam sapiente dolores consequatur nisi quasi iste assumenda, odio recusandae laborum
-                                        totam nesciunt reprehenderit.
-                                    </p>
+                                <div class="buttons flexor">
+                                    <a href="https://www.linkedin.com/in/jordan-engstrom-265291160" title="linked in">
+                                        <i class="fab fa-linkedin fa-2x pointer"></i>
+                                    </a>
+                                    <a href="https://github.com/jordanengstrom?tab=repositories"  title="github">
+                                        <i class="fab fa-github fa-2x pointer"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/jordan.smithjackson" title="facebook">
+                                        <i class="fab fa-facebook-square fa-2x pointer"></i>
+                                    </a>
+                                    <a href="https://twitter.com/StellarGeode"  title="twitter">
+                                        <i class="fab fa-twitter-square fa-2x pointer"></i>
+                                    </a>
                                 </div>
-                                <div class="col-sm-4 portrait-block">
-                                    <div class="row portrait-row">
-                                        <img class="portrait" src="./assets/me.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row portfolio about-row" id="portfolio">
+                    <div class="col-sm-12">
+                        <div class="row title">
+                            <h3>Portfolio</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 v-align">
+                        <div class="row port-items">
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/aboard-min.png" alt="all a board">
+                                    <div class="card-body">
+                                        <h5 class="card-title">All aBoard</h5>
+                                        <p class="card-text">Created a trello-like app that heavily utilizes the progressive JavaScript framework
+                                            Vue.js. Logon with email: t@t.com, password: test to check out all the features!
+                                        </p>
+                                        <a href="https://port-vue-kan-ban.herokuapp.com/#/login" class="btn btn-primary">check it out</a>
                                     </div>
-                                    <div class="buttons flexor">
-                                        <a href="https://www.linkedin.com/in/jordan-engstrom-265291160" title="linked in">
-                                            <i class="fab fa-linkedin fa-2x pointer"></i>
-                                        </a>
-                                        <a href="https://github.com/jordanengstrom?tab=repositories"  title="github">
-                                            <i class="fab fa-github fa-2x pointer"></i>
-                                        </a>
-                                        <a href="https://www.facebook.com/jordan.smithjackson" title="facebook">
-                                            <i class="fab fa-facebook-square fa-2x pointer"></i>
-                                        </a>
-                                        <a href="https://twitter.com/StellarGeode"  title="twitter">
-                                            <i class="fab fa-twitter-square fa-2x pointer"></i>
-                                        </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/vineyard-min.png" alt="through the grape vine">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Through the Grape Vine</h5>
+                                        <p class="card-text">Ever wanted to know what wine pairs best with your food? Now you can with ThroughTheGrapeVine!
+                                        </p>
+                                        <button href="#" class="btn btn-primary">check it out</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/inspire-min.png" alt="inspire">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Inspire</h5>
+                                        <p class="card-text">Need to feel inspired about your seemingly never ending to-do list? All you need
+                                            to do is visit Inspire
+                                        </p>
+                                        <a href="https://jordanengstrom.github.io/inspired/" class="btn btn-primary">check it out</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row portfolio about-row">
-                        <div class="col-sm-12">
-                            <div class="row title" id="portfolio">
-                                <h3>Portfolio</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 v-align">
-                            <div class="row port-items">
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/aboard-min.png" alt="all a board">
-                                        <div class="card-body">
-                                            <h5 class="card-title">All aBoard</h5>
-                                            <p class="card-text">Created a trello-like app that heavily utilizes the progressive JavaScript framework Vue.js. Logon with email: t@t.com, password: test to check out all the features!
-                                            </p>
-                                            <a href="https://port-vue-kan-ban.herokuapp.com/#/login" class="btn btn-primary">check it out</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/vineyard-min.png" alt="through the grape vine">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Through the Grape Vine</h5>
-                                            <p class="card-text">Ever wanted to know what wine pairs best with your food? Now you can with ThroughTheGrapeVine!
-                                            </p>
-                                            <button href="#" class="btn btn-primary">check it out</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/inspire-min.png" alt="inspire">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Inspire</h5>
-                                            <p class="card-text">Need to feel inspired about your seemingly never ending to-do list? All you need to do is visit Inspire 
-                                            </p>
-                                            <a href="https://jordanengstrom.github.io/inspired/" class="btn btn-primary">check it out</a>
-                                        </div>
+                    <div class="col-sm-12 v-align">
+                        <div class="row port-items">
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/slap-game-min.png" alt="Po from Kung Fu Panda">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Slap Game</h5>
+                                        <p class="card-text">This single player game demonstrates the fundamentals of data encapsulation
+                                        </p>
+                                        <a href="https://jordanengstrom.github.io/SlapGame-1p-Final/" class="btn btn-primary">check it out</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-12 v-align">
-                            <div class="row port-items">
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/slap-game-min.png" alt="Po from Kung Fu Panda">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Slap Game</h5>
-                                            <p class="card-text">This single player game demonstrates the fundamentals of data encapsulation
-                                            </p>
-                                            <a href="https://jordanengstrom.github.io/SlapGame-1p-Final/" class="btn btn-primary">check it out</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/pyramid-plunder-pic.PNG" alt="ascii-art">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Pyramid Plunder</h5>
-                                            <p class="card-text">Hunt for the hidden treasure in this C# console game. Solution can be found in the game.md file.
-                                            </p>
-                                            <a href="https://github.com/jordanengstrom/pyramid-plunder" class="btn btn-primary">check it out</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/santa-min.png" alt="bingo card">
-                                        <div class="card-body">
-                                            <h5 class="card-title roboto-txt">Bingo</h5>
-                                            <p class="card-text roboto-txt">Did you volunteer to make custom bingo cards for the company Christmas party like I did? Here's a program that will generate the cards for you!
-                                            </p>
-                                            <a href="https://github.com/jordanengstrom/Bingo" class="btn btn-primary roboto-txt">check it out</a>
-                                        </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/pyramid-plunder-pic.PNG" alt="ascii-art">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pyramid Plunder</h5>
+                                        <p class="card-text">Hunt for the hidden treasure in this C# console game. Solution can be found in the
+                                            game.md file.
+                                        </p>
+                                        <a href="https://github.com/jordanengstrom/pyramid-plunder" class="btn btn-primary">check it out</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-12 v-align">
-                            <div class="row port-items">
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="./assets/melodia-min.png" alt="melodia">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Melodia</h5>
-                                            <p class="card-text">This Vue.js app lets you make playlists by searching artists from the iTunes artist api
-                                            </p>
-                                            <a href="https://dashboard.heroku.com/apps/engstrom-vue-music" class="btn btn-primary">check it out</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                                card's content.
-                                            </p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title roboto-txt">Card title</h5>
-                                            <p class="card-text roboto-txt">Some quick example text to build on the card title and make up the bulk of the
-                                                card's content.
-                                            </p>
-                                            <a href="#" class="btn btn-primary roboto-txt">Go somewhere</a>
-                                        </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/santa-min.png" alt="bingo card">
+                                    <div class="card-body">
+                                        <h5 class="card-title roboto-txt">Bingo</h5>
+                                        <p class="card-text roboto-txt">Did you volunteer to make custom bingo cards for the company Christmas party like
+                                            I did? Here's a program that will generate the cards for you!
+                                        </p>
+                                        <a href="https://github.com/jordanengstrom/Bingo" class="btn btn-primary roboto-txt">check it out</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="row about-row">
+                    <div class="col-sm-12 v-align">
+                        <div class="row port-items">
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="./assets/melodia-min.png" alt="melodia">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Melodia</h5>
+                                        <p class="card-text">This Vue.js app lets you make playlists by searching artists from the iTunes artist
+                                            api
+                                        </p>
+                                        <a href="https://dashboard.heroku.com/apps/engstrom-vue-music" class="btn btn-primary">check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card" style="width: 20rem;">
+                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title roboto-txt">Card title</h5>
+                                        <p class="card-text roboto-txt">Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary roboto-txt">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-row"> 
                         <div class="col-sm-9">
                             <div class="row title" id="resume">
                                 <h3>Resume</h3> <i class="fas fa-play"></i>
@@ -215,12 +223,13 @@
 
                             </div>
                         </div>
-                    </div> -->
-                </div>
-                <div class="col-sm-2"></div>
-                </div>
+                    </div>
+            </div>
+            <div class="col-sm-2">
+                    <a class="btn btn-primary" id="go-to-top" onclick="toTop(); return false;" href="#">Go back up</a>
+            </div>
+        </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

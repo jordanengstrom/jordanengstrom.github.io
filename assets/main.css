@@ -142,8 +142,8 @@ p
 }
 
 .center-bg {
-  margin-top: 5rem;
-  background-color: rgba(255,255,255,0.3);
+  margin-top: 10rem;
+  background-color: rgba(255,255,255,0.425);
 }
 .portrait-row{
   justify-content: center;
@@ -166,6 +166,12 @@ h2 {
 
 .image {
   background-color: #d8d8d8;
+}
+
+#go-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 #footer {
