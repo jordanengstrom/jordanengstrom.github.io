@@ -74,15 +74,12 @@ a:hover {
 
 }
 
-.container-fluid{
-  background-image: url('./land-page-bg-min.jpg');
-  /* height: 100vh; */
-  background-position: center;
-  background-position: fixed;
-  background-repeat: no-repeat;
+body {
+  background: url('./land-page-bg-min.jpg') no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height: 100%;
-  margin: 0 0px !important;
 }
 
 .about-ipsum-txt {
@@ -110,6 +107,20 @@ p
 
 .card-body{
   text-align: center;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #cdcec4;
+  border: none;
+}
+
+.btn-primary:hover {
+ background-color: 
+ #73828a;
 }
 
 .name{
