@@ -71,6 +71,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -105,12 +106,16 @@ p
   text-align: center;
 }
 
+.card-img-top {
+  height: 13rem;
+}
 .card-body{
   text-align: center;
 }
 
 .card {
   margin-bottom: 1rem;
+  width: 20rem;
 }
 
 .btn-primary {
@@ -143,6 +148,7 @@ p
 
 .center-bg {
   margin-top: 10rem;
+  margin-bottom: 10rem;
   background-color: rgba(255,255,255,0.425);
 }
 .portrait-row{
@@ -174,13 +180,8 @@ h2 {
   right: 0;
 }
 
-#footer {
-  height: 200px;
-  background-color: #000000;
+.uni-info {
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
-/*.nav:before,.nav:after
-    content: " "
-    display: table */
-/**:before, *:after
-    box-sizing: border-box */
