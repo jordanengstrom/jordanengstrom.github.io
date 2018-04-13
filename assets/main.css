@@ -13,16 +13,17 @@ h3 {
 
 .title {
   justify-content: center;
-  margin: 1rem;
+  align-items: center;
   font-family: 'Monoton', cursive;
   background-color: rgba(255,255,255,0.6);
   /* background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 81%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0) 100%); */
-  margin-top: -2rem;
-  margin-bottom: 1rem;
-  margin-left: -3.80rem;
-  margin-right: -.9rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  /* margin: 1rem; */
+  /* margin-top: -2rem; */
+  /* margin-bottom: 1rem; */
+  /* margin-left: -3.80rem; */
+  /* margin-right: -.9rem; */
+  /* padding-top: 1.5rem; */
+  /* padding-bottom: 1.5rem; */
   /* margin: 7rem; */
 }
 
@@ -41,7 +42,7 @@ a:hover {
 
 .about-row {
   margin-top: 2rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   justify-content: space-around;
 }
 
@@ -92,7 +93,7 @@ body {
 }
 
 #about{
-  padding-left: 3rem;
+  margin-top: -2rem;
 }
 
 hr{
