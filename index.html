@@ -10,43 +10,48 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/main.css">
-        <script type="text/javascript" src="./scrollController.js">
-        </script>
-        
+    <link rel="stylesheet" href="assets/main.css">
+    <script type="text/javascript" src="./scrollController.js">
+    </script>
+
 </head>
 
 <body>
     <div class="container-fluid">
         <nav class="flexor fixed-top navbar navbar-expand-sm" id="nav">
-            <div class="side">
+            <div class="side navbar-brand">
                 <img src="./assets/logo-transparent-bg.png" alt="jae" style="height: 4rem;">
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div>
-                <div class="side">
-                    <h6>
-                        <a onclick="initScroll('about'); return false; " href="#about">About</a>
-                    </h6>
-                </div>
-                <div class="side">
-                    <h6>
-                        <a onclick="initScroll('portfolio'); return false; " href="#portfolio">Portfolio</a>
-                    </h6>
-                </div>
-                <div class="side">
-                    <h6>
-                        <a onclick="initScroll('education'); return false; " href="#education">Education</a>
-                    </h6>
-                </div>
-                <div class="side">
-                    <h6>
-                        <a href="./assets/2018_resume.pdf">Resume</a>
-                    </h6>
+                <div class="collapse navbar-collapse">
+                    <div class="side">
+                        <h6>
+                            <a onclick="initScroll('about'); return false; " href="#about">About</a>
+                        </h6>
+                    </div>
+                    <div class="side nav-item">
+                        <h6>
+                            <a onclick="initScroll('portfolio'); return false; " href="#portfolio">Portfolio</a>
+                        </h6>
+                    </div>
+                    <div class="side nav-item">
+                        <h6>
+                            <a onclick="initScroll('education'); return false; " href="#education">Education</a>
+                        </h6>
+                    </div>
+                    <div class="side nav-item">
+                        <h6>
+                            <a href="./assets/2018_resume.pdf">Resume</a>
+                        </h6>
+                    </div>
                 </div>
             </div>
-
         </nav>
         <div class="row">
             <div class="col-sm-2"></div>
@@ -63,7 +68,12 @@
                                 <h4>Full stack developer</h4>
                             </div>
                             <div class="col-sm-5 about-txt">
-                                <p class="row about-ipsum-txt">I am a recent Boise State graduate, and I decided to attend Boise CodeWorks to improve my programming skills and pursue my dream of being a developer. With backgrounds in mathematics and geophysics. I have had a lot of experience designing and implementing computational algorithms. My true passion is not only creating those algorithms, but also creating something usable from the results. I am motivated to work at the intersection of creativity and logic, and be part of a team creating inspiring software that has never existed.
+                                <p class="row about-ipsum-txt">I am a recent Boise State graduate, and I decided to attend Boise CodeWorks to improve my
+                                    programming skills and pursue my dream of being a developer. With backgrounds in mathematics
+                                    and geophysics. I have had a lot of experience designing and implementing computational
+                                    algorithms. My true passion is not only creating those algorithms, but also creating
+                                    something usable from the results. I am motivated to work at the intersection of creativity
+                                    and logic, and be part of a team creating inspiring software that has never existed.
                                 </p>
                             </div>
                             <div class="col-sm-4 portrait-block">
@@ -115,7 +125,7 @@
                                         <h5 class="card-title">Through the Grape Vine</h5>
                                         <p class="card-text">Ever wanted to know what wine pairs best with your food? Now you can with ThroughTheGrapeVine!
                                         </p>
-                                        <button href="https://github.com/jordanengstrom/ThroughTheGrapeVine" class="btn btn-primary">check it out</button>
+                                        <button href="https://engstrom-grapevine.herokuapp.com/#/login" class="btn btn-primary">check it out</button>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +190,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Melodia</h5>
                                         <p class="card-text">This Vue.js app lets you make playlists by searching artists from the iTunes artist
-                                            api
+                                            API
                                         </p>
                                         <a href="https://dashboard.heroku.com/apps/engstrom-vue-music" class="btn btn-primary">check it out</a>
                                     </div>
@@ -188,13 +198,12 @@
                             </div>
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="http://placehold.it/200x200" alt="Card image cap">
+                                    <img class="card-img-top" src="./assets/keepr-min.png" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                            content.
+                                        <h5 class="card-title">Keepr</h5>
+                                        <p class="card-text">Keep track of cool things you find and share things with others using a keepr account.
                                         </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <a href="https://engstrom-keepr.herokuapp.com/#/login" class="btn btn-primary">check it</a>
                                     </div>
                                 </div>
                             </div>
@@ -245,17 +254,17 @@
                         </div>
                     </div>
                 </div>
-            <div class="col-sm-2">
+                <div class="col-sm-2">
                     <a class="btn btn-primary" id="go-to-top" onclick="toTop(); return false;" href="#">Go back up</a>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </body>
 
 
