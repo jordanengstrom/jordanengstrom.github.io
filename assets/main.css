@@ -53,6 +53,11 @@ a:hover {
   justify-content: space-between; 
 }
 
+.flexor-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .side {
   display: inline-flex;
   margin-right: 1rem;
@@ -164,8 +169,9 @@ p
 }
 
 .portrait {
+  margin-top: 2rem;
   border-radius: 50%;
-  width: 100%;
+  width: 22rem;
   height: auto;
 }
 

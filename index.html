@@ -30,25 +30,28 @@
             </button>
             <div>
                 <div class="collapse navbar-collapse">
-                    <div class="side">
-                        <h6>
-                            <a onclick="initScroll('about'); return false; " href="#about">About</a>
-                        </h6>
-                    </div>
-                    <div class="side nav-item">
-                        <h6>
-                            <a onclick="initScroll('portfolio'); return false; " href="#portfolio">Portfolio</a>
-                        </h6>
-                    </div>
-                    <div class="side nav-item">
-                        <h6>
-                            <a onclick="initScroll('education'); return false; " href="#education">Education</a>
-                        </h6>
-                    </div>
-                    <div class="side nav-item">
-                        <h6>
-                            <a href="./assets/2018_resume.pdf">Resume</a>
-                        </h6>
+                    <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                        <div class="side">
+                            <h6>
+                                <a onclick="initScroll('about'); return false; " href="#about">About</a>
+                            </h6>
+                        </div>
+                        <div class="side nav-item">
+                            <h6>
+                                <a onclick="initScroll('portfolio'); return false; " href="#portfolio">Portfolio</a>
+                            </h6>
+                        </div>
+                        <div class="side nav-item">
+                            <h6>
+                                <a onclick="initScroll('education'); return false; " href="#education">Education</a>
+                            </h6>
+                        </div>
+                        <div class="side nav-item">
+                            <h6>
+                                <a href="./assets/2018_resume.pdf">Resume</a>
+                            </h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,20 +70,12 @@
                                 <hr>
                                 <h4>Full stack developer</h4>
                             </div>
-                            <div class="col-sm-5 about-txt">
-                                <p class="row about-ipsum-txt">I am a recent Boise State graduate, and I decided to attend Boise CodeWorks to improve my
-                                    programming skills and pursue my dream of being a developer. With backgrounds in mathematics
-                                    and geophysics. I have had a lot of experience designing and implementing computational
-                                    algorithms. My true passion is not only creating those algorithms, but also creating
-                                    something usable from the results. I am motivated to work at the intersection of creativity
-                                    and logic, and be part of a team creating inspiring software that has never existed.
-                                </p>
-                            </div>
-                            <div class="col-sm-4 portrait-block">
+                            <div class="col-sm-12 about-txt">
+                                <!-- <div class="portrait-block"> -->
                                 <div class="row portrait-row">
                                     <img class="portrait" src="./assets/me.jpg">
                                 </div>
-                                <div class="buttons flexor">
+                                <div class="buttons flexor-around">
                                     <a href="https://www.linkedin.com/in/jordan-engstrom-265291160" title="linked in">
                                         <i class="fab fa-linkedin fa-2x pointer"></i>
                                     </a>
@@ -94,6 +89,14 @@
                                         <i class="fab fa-twitter-square fa-2x pointer"></i>
                                     </a>
                                 </div>
+                                <!-- </div> -->
+                                <p class="row about-ipsum-txt">I am a recent Boise State graduate, and I decided to attend Boise CodeWorks to improve my
+                                    programming skills and pursue my dream of being a developer. With backgrounds in mathematics
+                                    and geophysics, I have had a lot of experience designing and implementing computational
+                                    algorithms. My true passion is not only creating those algorithms, but also creating
+                                    something usable from the results. I am motivated to work at the intersection of creativity
+                                    and logic, and be part of a team creating inspiring software that has never existed. Like what you see? Drop me a line at jordan.engstrom@gmail.com!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -123,7 +126,8 @@
                                     <img class="card-img-top" src="./assets/vineyard-min.png" alt="through the grape vine">
                                     <div class="card-body">
                                         <h5 class="card-title">Through the Grape Vine</h5>
-                                        <p class="card-text">Ever wanted to know what wine pairs best with your food? Now you can with ThroughTheGrapeVine! Logon with email: t@t.com, password: test to check out all the features
+                                        <p class="card-text">Ever wanted to know what wine pairs best with your food? Now you can with ThroughTheGrapeVine!
+                                            Logon with email: t@t.com, password: test to check out all the features
                                         </p>
                                         <button href="https://engstrom-grapevine.herokuapp.com/#/login" class="btn btn-primary">check it out</button>
                                     </div>
@@ -192,7 +196,7 @@
                                         <p class="card-text">This Vue.js app lets you make playlists by searching artists from the iTunes artist
                                             API
                                         </p>
-                                        <a href="https://dashboard.heroku.com/apps/engstrom-vue-music" class="btn btn-primary">check it out</a>
+                                        <a href="https://engstrom-vue-music.herokuapp.com/#/" class="btn btn-primary">check it out</a>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +216,8 @@
                                     <img class="card-img-top" src="./assets/sag-diag.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title roboto-txt">Sagitta of a Circle</h5>
-                                        <p class="card-text roboto-txt">This Newton's Method MatLab algorithm will tell you how much gas you need in your flat-lying cylindrical gas tank in order to get back to shore
+                                        <p class="card-text roboto-txt">This Newton's Method MatLab algorithm will tell you how much gas you need in your
+                                            flat-lying cylindrical gas tank in order to get back to shore
                                         </p>
                                         <a href="https://github.com/jordanengstrom/sagitta/blob/master/sag-readme.md" class="btn btn-primary roboto-txt">check it out</a>
                                     </div>
@@ -227,7 +232,8 @@
                                     <img class="card-img-top" src="./assets/compass-direction.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title roboto-txt">Wave Propogation</h5>
-                                        <p class="card-text roboto-txt">This MatLab program utililizes cross correlation of infrasound signals to determine compass direction of wave propogation
+                                        <p class="card-text roboto-txt">This MatLab program utililizes cross correlation of infrasound signals to determine
+                                            compass direction of wave propogation
                                         </p>
                                         <a href="https://github.com/jordanengstrom/villarrica-inf-xcor/blob/master/Villarrica_Infrasound_Proposal.pdf" class="btn btn-primary roboto-txt">check it out</a>
                                     </div>
