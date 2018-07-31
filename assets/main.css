@@ -157,7 +157,7 @@ p
 .center-bg {
   margin-top: 10rem;
   margin-bottom: 10rem;
-  background-color: rgba(255,255,255,0.425);
+  background-color: rgba(255,255,255,0.56);
 }
 .portrait-row{
   justify-content: center;
@@ -171,8 +171,12 @@ p
 .portrait {
   margin-top: 2rem;
   border-radius: 50%;
-  width: 22rem;
-  height: auto;
+  /* new settings */
+  width: 17rem;
+  height: 22rem;
+  /* old settings */
+  /* width: 22rem; */
+  /* height: auto; */
 }
 
 h2 {
