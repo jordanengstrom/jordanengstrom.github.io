@@ -20,7 +20,7 @@ function initScroll(elementId) {
 }
 
 window.onscroll = function(){
-	marginY = this.pageYOffset;	
+    marginY = this.pageYOffset;
 };
 
 function toTop() {
